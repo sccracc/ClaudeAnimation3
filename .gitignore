@@ -1,0 +1,10 @@
+build/
+__pycache__/
+*.pyc
+audio/tests/
+audio/music/raw_stream.txt
+audio/music/lyria_raw.json
+audio/music/*.bin
+audio/music/l1_small.mp3
+audio/vo/*.wav
+audio/music/*.wav

@@ -1,0 +1,22 @@
+[
+ {"id": "s01_hook", "title": "Hook",
+  "text": "Pick up something heavy, and within a fraction of a second, a signal leaves your brain and tells thousands of tiny cells to pull. Do that often enough, in the right way, and your body quietly rebuilds itself to be stronger. But the change doesn't happen during the workout. It happens after. So what's really going on in there?"},
+ {"id": "s02_anatomy", "title": "What muscle is made of",
+  "text": "Look closely at a muscle, like the biceps, and it's built a lot like a rope: bundles, inside bundles. Each bundle is packed with muscle fibers, long single cells, some running nearly the full length of the muscle. Inside every fiber are thinner strands called myofibrils, divided into thousands of repeating units called sarcomeres. This is where movement actually happens. Each sarcomere holds two kinds of protein filament: thin strands of actin, and thicker strands of myosin."},
+ {"id": "s03_contraction", "title": "How a contraction works",
+  "text": "When you decide to lift, your brain sends an electrical signal down a motor neuron. At the muscle, that signal sweeps across the fiber and releases calcium from stores inside the cell. Calcium uncovers binding sites on the actin, and the myosin heads latch on, pivot, and pull. Then they let go, and grab again. Each tiny stroke is powered by a molecule called ATP. Millions happen at once. The filaments slide past each other, the sarcomeres shorten, and the whole muscle contracts."},
+ {"id": "s04_recruitment", "title": "Lifting heavy",
+  "text": "But your nervous system doesn't fire every fiber at once. Muscles are organized into motor units: one nerve, and the fibers it controls. Light work uses small units. As the weight gets heavier, or a set grows harder, your brain calls in larger, more powerful ones. These fibers have the greatest capacity to grow, and they're only fully recruited when the effort is genuinely challenging."},
+ {"id": "s05_fatigue", "title": "The burn and fatigue",
+  "text": "All that pulling burns energy fast. A muscle stores only a few seconds' worth of ATP, so it constantly rebuilds it, from phosphocreatine and from glucose. During a hard set, this leaves byproducts behind, like hydrogen ions, which make the muscle more acidic. That's a big part of the burn. Lactate often takes the blame, but it's actually a fuel your body recycles. As byproducts build up, contraction becomes less efficient, and each rep gets harder. That's fatigue: a temporary, protective slowdown."},
+ {"id": "s06_damage", "title": "Micro-damage",
+  "text": "Hard training, especially the lowering phase of a lift, can also cause microscopic damage to the fibers. The soreness you feel a day or two later comes mostly from that repair and inflammation, not leftover acid. But damage isn't really the goal. The key signal for growth is mechanical tension: fibers producing high force."},
+ {"id": "s07_repair", "title": "Recovery and protein synthesis",
+  "text": "Fibers sense that tension, and switch on growth signals, including a pathway called em-tor. For a day or two afterward, muscle protein synthesis runs higher than normal, using amino acids from the protein you eat. Nearby stem cells, called satellite cells, can fuse with the fibers, donating extra nuclei to support the rebuild. When building outpaces breakdown, fibers add new myofibrils, and grow thicker. That's hypertrophy."},
+ {"id": "s08_neural", "title": "Getting stronger",
+  "text": "Strength, though, starts in the nervous system. In the first weeks of training, much of the progress comes from better coordination: recruiting more motor units, and firing them faster. Size follows later."},
+ {"id": "s09_recovery", "title": "Sleep, food and rest",
+  "text": "That's why recovery isn't optional. Sleep is when much of the rebuilding happens, and even one night of poor sleep can reduce protein synthesis. Enough protein, spread through the day, provides the building blocks. And rest days give the process time to finish."},
+ {"id": "s10_takeaway", "title": "The takeaway",
+  "text": "That's the difference between simply moving, and actually adapting. Your body only changes when it's asked to do something it isn't ready for yet. Lift the same weight, the same way, forever, and there's no reason to change. Challenge the muscle close to its limit, add a little more over time, and then let it recover. The workout isn't what makes you stronger. It's the message. The rebuilding afterward is the answer."}
+]
