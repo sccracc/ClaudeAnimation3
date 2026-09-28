@@ -1,6 +1,6 @@
 # Under Tension — What Actually Happens to Your Muscles When You Work Out
 
-A 4 min 43 s animated documentary short in a hand-drawn paper-collage style.
+A 4 min 47 s animated documentary short in a hand-drawn paper-collage style.
 
 **Final video:** `output/animated-short-final.mp4` (1920×1080, 24 fps, H.264 + AAC)
 
