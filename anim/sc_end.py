@@ -11,7 +11,7 @@ class Repair(Scene):
         c = self.cue
         background(ctx, t)
         t2 = c("for") - .4; t3 = c("nearby") - .4; t4 = c("when") - .4
-        a1 = 1 - ph(t, t2 - .2, .5); a2 = win(t, t2, t3, .5, .5); a3 = win(t, t3, t4, .5, .5); a4 = ph(t, t4, .5)
+        a1 = 1 - ph(t, t2 + .55, .5); a2 = win(t, t2 + .55, t3, .5, .5); a3 = win(t, t3, t4, .5, .5); a4 = ph(t, t4, .5)
         if a1 > 0: self.signal(ctx, t, a1)
         if a2 > 0: self.mps(ctx, t, a2)
         if a3 > 0: self.satellite(ctx, t, a3)
@@ -37,13 +37,13 @@ class Repair(Scene):
         sx, sy = 960, 640
         for i, x in enumerate(sens):
             p = ph(t, c("switch") - .4 + i * .08, 1.2, ease)
-            path_ = qbez((x, 320), ((x + sx) / 2, 420), (sx, sy - 60), 16)
+            path_ = qbez((x, 320), ((x + sx) / 2, 420), (sx, sy - 45), 16)
             ink(ctx, path_, 2.2, TEAL, a * .7 * min(1, p * 2), prog=p, seed=2020 + i, dash=[8, 6])
             for k in range(2):
                 q = (t * .6 + k * .5 + i * .13) % 1
                 if p >= 1:
                     x2, y2 = point_at(path_, q); blob(ctx, x2, y2, 7, OCHRE, a, seed=2030 + i * 3 + k, shadow=.1)
-        on = ph(t, c("em-tor") - .2, .6, eback)
+        on = ph(t, c("switch") - .1, .6, eback)
         ba = a * ph(t, c("switch") - .3, .5)
         paper_shape(ctx, rrect_pts(sx - 170, sy - 40, 340, 150, 14), CREAM, ba, 2040, shadow=.22, outline=INK, ow=2)
         if ba > 0:
@@ -58,17 +58,17 @@ class Repair(Scene):
             blob(ctx, px, py, 12, OCHRE, ba, seed=2047, outline=INK, ow=1.4)
             text(ctx, "off", sx - 150, sy - 50, 'hand', 32, INK_SOFT, ba * .8, 'center')
             text(ctx, "on", sx + 150, sy - 50, 'hand', 32, hexc('4E6F3A'), ba, 'center')
-            text(ctx, "mTOR", sx, sy - 70, 'title', 64, INK, a * ph(t, c("em-tor") - .3, .5), 'center', reveal=ph(t, c("em-tor") - .3, .6))
+            text(ctx, "mTOR", sx + 200, sy + 70, 'title', 64, INK, a * ph(t, c("em-tor") - .3, .5), 'left', reveal=ph(t, c("em-tor") - .3, .6))
             if on > .5:
                 for r in (1, 2, 3):
                     q = ((t * .8) + r / 3) % 1
                     ink(ctx, ellipse_pts(sx, sy + 15, 150 + q * 260, 60 + q * 120, 60), 2, SAGE, a * (1 - q) * .7, seed=2050 + r, closed=True, sketch=False)
-                text(ctx, "growth signals switched on", sx, sy + 200, 'hand', 44, hexc('4E6F3A'), a, 'center', reveal=ph(t, c("em-tor") + .2, .8))
+                text(ctx, "growth signals switched on", sx, sy + 250, 'hand', 44, hexc('4E6F3A'), a, 'center', reveal=ph(t, c("growth") + .3, .8))
 
     def mps(self, ctx, t, a):
         c = self.cue
         x0, y0, w, h = 260, 800, 1000, 460
-        axes(ctx, x0, y0, w, h, t, c("for") - .3, xl="hours after training", yl="protein building", a=a, seed=2100)
+        axes(ctx, x0, y0, w, h, t, c("for") + .1, xl="hours after training", yl="protein building", a=a, seed=2100)
         base = .3
         ink(ctx, [(x0, y0 - h * base), (x0 + w, y0 - h * base)], 2, INK_SOFT, a * ph(t, c("for"), .5), seed=2101, dash=[9, 8])
         text(ctx, "normal", x0 + w - 10, y0 - h * base + 36, 'hand', 32, INK_SOFT, a * ph(t, c("for"), .5), 'right')
